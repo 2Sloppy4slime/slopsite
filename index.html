@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" ; initial-scale=1.0>
+    <title style="color:white">SL_Opp Y-SL_Ime</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    
+    <link href='https://fonts.googleapis.com/css?family=Blaka' rel='stylesheet'>
+  </head>
+  
+  <body>
+    <link href="/style.css" rel="stylesheet">
+    <div style= "width:15vw; height:-5vw; padding:1vh; left; background-image:url(mainbt_bg.png); position:fixed">
+      <a href="https://sloppyslime.neocities.org/portfolio"><img src="/mainbt_folio.png" ; width = 64vh></a>
+    
+      <a href="https://sloppyslime.neocities.org/youtube"><img src="/mainbt_youtube.png" ; width = 64vh></a>
+      
+      <a href="https://sloppyslime.neocities.org/presentation"><img src="/mainbt_self.png" ; width = 64vh></a>
+      
+      <a href="https://discord.gg/sHP6nUtT9m"><img src="/mainbt_discord.png" ; width = 64vh></a>
+      
+    </div>  <!--Liens top left -->
+    
+    <center>
+      <img src="/Title-unscreen.gif" >
+      <div class = "centerdiv" ; id = "home">
+        
+        <h1> Welcome to sloppy's website</h1>
+        
+      </div> <!--Home -->
+
+      <div class = "centerdiv" ; id = "news"> 
+        <h1>Latest News Post</h1>
+        
+        <div id = "newest">
+          
+          
+        what??
+        
+        
+        </div>
+        <div hidden>
+          <iframe id=latest-frame src="archive.html"></iframe>
+        </div>
+
+        <article id=newest></article>
+
+        <script>
+          'use strict';
+          let [frame, newest] = [
+            document.querySelector('#latest-frame'),
+            document.querySelector('#newest')
+          ];
+          frame.onload = ()=> {
+            const latest = frame.contentDocument.querySelector('#latest');
+            newest.innerHTML = latest.innerHTML;
+          }
+        </script>
+      </div> <!--News -->
+    
+    </center>
+    
+  </body>
+  
+</html>
