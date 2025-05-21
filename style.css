@@ -3,9 +3,9 @@
    "how to change link color." */
 
 body {
-   background-image : url(sloppyloop.png) ;
-   background-size: 70px;
+    background-color: slategrey;
      }
+     
 h1  {
   font-family: 'Verdana';
   font-size: 50px;
